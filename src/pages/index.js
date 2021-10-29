@@ -1,8 +1,9 @@
 import React from 'react'
 import {graphql} from 'gatsby'
 import "./style.css";
-
 import {Header} from "../components/Header"
+import { Main } from "../components/Main"
+import {Footer} from "../components/Footer"
 
 export const query = graphql`
 query {
@@ -34,6 +35,8 @@ export default function Index({data}){
       booking={dataOptions.btnbooking}
       contact={dataOptions.btncontact}
       />
+    <Main />
+    <Footer />
     </div>
   )
 }
