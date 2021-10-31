@@ -34,6 +34,9 @@ export function Footer() {
               url
             }
             btnsubscribe
+            imgbolinha {
+              url
+            }
           }
         }
       }
@@ -41,42 +44,91 @@ export function Footer() {
     `)
     const {titleadd, lorem, titlelinks, btnhomefooter, btnabout,  btntaxifooter,
         btnbookingfooter, btncontactfooter, titlefollow, imgfacebook, imgtwitter,
-        imglinkendin, imgyoutube, imginstagram, btnsubscribe } = data.alldata.footers[0]
+        imglinkendin, imgyoutube, imginstagram, btnsubscribe, imgbolinha } = data.alldata.footers[0]
       
     return(
+      <div>
         <S.ContainerFooter>
-            <S.Boxaddress>
-                <h2>{titleadd}</h2>
-                <p>{lorem}</p>
-            </S.Boxaddress>
-            <div>
-                <h2>{titlelinks}</h2>
-                <Link to="#">
-                    <S.List>
-                        <li>{btnhomefooter}</li>
-                        <li>{btnabout}</li>
-                        <li>{btntaxifooter}</li>
-                        <li>{btnbookingfooter}</li>
-                        <li>{btncontactfooter}</li>  
-
-                    </S.List>
-                </Link>  
-            </div>
-            <div>
-                <h3>{titlefollow}</h3>
+          <S.SectionFooter>
+            <S.BoxFooter>
+            <S.BoxAddress>
+                <S.TitleFooter>{titleadd}</S.TitleFooter>
+                <S.SubtitleFooter>{lorem}</S.SubtitleFooter>
+            </S.BoxAddress>
+            
+            <S.BoxLinks>
+                <S.TitleFooter>{titlelinks}</S.TitleFooter>
                 <a href="#">
-                    <img src={imgfacebook.url} alt=""/>
-                    <img src={imgtwitter.url} alt=""/>
-                    <img src={imglinkendin.url} alt=""/>
-                    <img src={imgyoutube.url} alt=""/>
-                    <img src={imginstagram.url} alt=""/>
+                        <S.ContainerLinksPrime>
+                        <S.ImageLinks src={imgbolinha.url} alt=""/>
+                        <S.ParagraphFollow href="#">{btnhomefooter}</S.ParagraphFollow>
+                        </S.ContainerLinksPrime>
+
+                        <S.ContainerLinks>
+                        <S.ImageLinks src={imgbolinha.url} alt=""/>
+                        <S.ParagraphFollow href="#">{btnabout}</S.ParagraphFollow>
+                        </S.ContainerLinks>
+
+                        <S.ContainerLinks>
+                        <S.ImageLinks src={imgbolinha.url} alt=""/>
+                        <S.ParagraphFollow href="#">{btntaxifooter}</S.ParagraphFollow>
+                        </S.ContainerLinks>
+                        
+                        <S.ContainerLinks>
+                        <S.ImageLinks src={imgbolinha.url} alt=""/>
+                        <S.ParagraphFollow href="#">{btnbookingfooter}</S.ParagraphFollow>
+                        </S.ContainerLinks>
+                        
+                        <S.ContainerLinks>
+                          <S.ImageLinks src={imgbolinha.url} alt=""/>
+                        <S.ParagraphFollow href="#">{btncontactfooter}</S.ParagraphFollow>
+                        </S.ContainerLinks>
+                      </a>
+            </S.BoxLinks>
+
+            <S.BoxFollow>
+                <S.TitleFooter>Follow Us</S.TitleFooter>
+                <a href="#">
+                  <S.ContainerFollow>
+                    <S.ImageFollow src={imgfacebook.url} alt=""/>
+                    <S.ParagraphFollow href="#">Facebook</S.ParagraphFollow>
+                  </S.ContainerFollow>
+
+                  <S.ContainerFollow>
+                    <S.ImageFollow src={imgtwitter.url} alt=""/>
+                    <S.ParagraphFollow href="#">Twitter</S.ParagraphFollow>
+                  </S.ContainerFollow>
+
+                  <S.ContainerFollow>
+                    <S.ImageFollow src={imglinkendin.url} alt=""/>
+                    <S.ParagraphFollow href="#">Linkedin</S.ParagraphFollow>
+                  </S.ContainerFollow>
+
+                  <S.ContainerFollow>  
+                    <S.ImageFollow src={imgyoutube.url} alt=""/>
+                    <S.ParagraphFollow href="#">Youtube</S.ParagraphFollow>
+                  </S.ContainerFollow>
+
+                  <S.ContainerFollow>
+                    <S.ImageFollow src={imginstagram.url} alt=""/>
+                    <S.ParagraphFollow href="#">Instagram</S.ParagraphFollow>
+                  </S.ContainerFollow>  
                 </a>
-            </div>
-            <div>
-                <h3>Newsletter</h3>
-                <input></input>
-                <button>{btnsubscribe}</button>
-            </div>
+            </S.BoxFollow>
+
+            <S.BoxNews>
+                <S.TitleFooter>Newsletter</S.TitleFooter>
+                <S.InputFooter placeholder="Enter Your Email"></S.InputFooter>
+                <S.BtnFooter>{btnsubscribe}</S.BtnFooter>
+            </S.BoxNews>
+
+            </S.BoxFooter>
+            </S.SectionFooter>
         </S.ContainerFooter>
+
+            <S.ContainerCopyright>
+                <S.ParagraphCopyright>2019 All Rights Reserved. Free html Templates</S.ParagraphCopyright>
+            </S.ContainerCopyright>
+            </div>
     )
 }
