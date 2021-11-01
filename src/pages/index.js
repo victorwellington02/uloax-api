@@ -9,8 +9,8 @@ export default function Index({data}){
     <div>
       {console.log("to aqui", data)}
       <Header/>
-      <Main />
-      <Footer />
+      <Main/>
+      <Footer/>
     </div>
   )
 }

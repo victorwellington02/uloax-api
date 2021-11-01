@@ -1,5 +1,8 @@
 import styled from 'styled-components'
 
+export const ContainerFooterSpace = styled.div`
+`
+
 export const ContainerFooter = styled.div`
 width: 100%;
 background-color: #292828;
@@ -150,9 +153,7 @@ margin-left: 17px;
 `
 
 export const ContainerCopyright = styled.div`
-display: flex;
-align-itens: flex-end;
-margin-top: 25px;
+margin-top: 2.5%;
 width: 100%;
 background-color: #ffffff;
 `
@@ -163,7 +164,6 @@ float: left;
 font-size: 17px;
 color: #000;
 text-align: center;
-margin-left: 0;
 `
 
 export const ImageLinks = styled.img`

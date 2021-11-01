@@ -1,12 +1,10 @@
 import React from 'react'
-import * as S from './style'
-
 import {graphql, useStaticQuery} from'gatsby'
-import { Link } from 'gatsby'
+import * as S from './style'
 
 export function Footer() {
     const data = useStaticQuery(graphql`
-    query MyQuery {
+    query {
         alldata {
           footers {
             titleadd
@@ -47,7 +45,8 @@ export function Footer() {
         imglinkendin, imgyoutube, imginstagram, btnsubscribe, imgbolinha } = data.alldata.footers[0]
       
     return(
-      <div>
+      <S.ContainerFooterSpace>
+        
         <S.ContainerFooter>
           <S.SectionFooter>
             <S.BoxFooter>
@@ -129,6 +128,7 @@ export function Footer() {
             <S.ContainerCopyright>
                 <S.ParagraphCopyright>2019 All Rights Reserved. Free html Templates</S.ParagraphCopyright>
             </S.ContainerCopyright>
-            </div>
+
+            </S.ContainerFooterSpace>
     )
 }
