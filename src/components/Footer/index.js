@@ -124,11 +124,11 @@ export function Footer() {
             </S.BoxFooter>
             </S.SectionFooter>
         </S.ContainerFooter>
-
-            <S.ContainerCopyright>
+          <S.ContainerCopyright>
+              <div>
                 <S.ParagraphCopyright>2019 All Rights Reserved. Free html Templates</S.ParagraphCopyright>
-            </S.ContainerCopyright>
-
-            </S.ContainerFooterSpace>
+              </div>
+          </S.ContainerCopyright>
+        </S.ContainerFooterSpace>
     )
 }
