@@ -234,3 +234,103 @@ width: 90%;
 export const ImagePhone = styled.img`
 height: 81vh;
 `
+
+export const Boxtitle = styled.div`
+display: flex;
+justify-content: center;
+height: 10rem;
+width: 100%;
+float: left;
+text-align: center;
+font-size: 50px;
+color: #fefefe;
+font-weight: bold;
+padding: 4rem;
+`
+
+export const Carheader = styled.img`
+width: 300px
+`
+
+export const Containercard = styled.div`
+`
+
+export const Boxcard = styled.div`
+width: 100%;
+float: left;
+background-color: #161c1e;
+height: auto;
+margin-top: 75px;
+padding-bottom: 57px;
+padding-left: 60px;
+padding-right: 60px;
+`
+
+export const InfoCar = styled.div`
+display: flex;
+flex-direction: column;
+width: 27%;
+height: 366px;
+justify-content: space-between;
+align-items: center;
+float: left;
+background-color: #fefefe;
+margin-top: 70px;
+
+` 
+
+export const Titlecard = styled.h2`
+width: 100%;
+float: left;
+text-align: center;
+color: #2b3436;
+font-size: 24px;
+`
+
+export const Cardparagraph = styled.p`
+width: 68%;
+float: left;
+text-align: center;
+justify-content: center;
+color: #2b3436;
+flex-wrap: wrap;
+display: flex;
+font-size: 20px;
+margin-left: 0 px;
+`
+
+export const Numbercar = styled.div`
+width: 20%;
+margin: 0 auto;
+font-size: 24px;
+color: #fefefe;
+height: 65px;
+background: #f8ca11;
+display: block;
+text-align: center;
+border-radius: 35px;
+padding-top: 17px;
+bottom: 35px;
+position: relative;
+`
+    
+export const Textour = styled.h2`
+width: 100%;
+float: left;
+text-align: center;
+font-size: 50px;
+color: #fefefe;
+font-weight: bold;
+padding-top: 3rem;
+`
+
+export const Texttaxi = styled.span`
+color: #f4db31;
+padding: 1rem
+`
+
+export const Cards = styled.div`
+width: 100%;
+display: flex;
+justify-content: space-evenly;
+`

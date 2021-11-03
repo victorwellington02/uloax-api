@@ -153,7 +153,10 @@ margin-left: 17px;
 `
 
 export const ContainerCopyright = styled.div`
-margin-top: 2.5%;
+display: flex;
+justify-content: center;
+align-items: flex-start;
+margin-top: 2%;
 width: 100%;
 background-color: #ffffff;
 `
@@ -164,6 +167,7 @@ float: left;
 font-size: 17px;
 color: #000;
 text-align: center;
+height: 3rem;
 `
 
 export const ImageLinks = styled.img`
