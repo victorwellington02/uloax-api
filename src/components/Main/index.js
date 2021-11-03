@@ -2,7 +2,8 @@ import React from 'react'
 import {graphql, useStaticQuery} from'gatsby'
 import * as S from './style'
 
-export function Main(){
+
+export function Main(props){
     const data = useStaticQuery(graphql`
     query {
         alldata {
@@ -46,7 +47,6 @@ btnbooknow, imgsinal, backgroundphone, backgroundplace, titledownload, subtitlet
 
     return(
         <S.ContainerMain>
-
         <S.ContainerRide>
             <S.BoxRide>
                 <S.BoxTitleRide>
@@ -101,6 +101,17 @@ btnbooknow, imgsinal, backgroundphone, backgroundplace, titledownload, subtitlet
             </S.BoxRidesReverse>
         </S.ContainerRideSecond>
 
+        <S.ContainerLocation backgroundImage={backgroundplace.url}>
+            <S.BoxLocation>
+                <S.TitleColumn>{titledownload}</S.TitleColumn>
+                <S.SubtitleColumn>{subtitletoday}</S.SubtitleColumn>
+            </S.BoxLocation>
+            <S.PhoneColumn>
+                <S.BoxImagePhone>
+                    <S.ImagePhone src={backgroundphone.url} alt=""/>
+                </S.BoxImagePhone>
+            </S.PhoneColumn>
+        </S.ContainerLocation>
         </S.ContainerMain>
     )
 }

@@ -1,5 +1,8 @@
 import styled from 'styled-components'
 
+export const ContainerMain = styled.div`
+`
+
 export const ContainerRide = styled.div`
 width: 100%;
 float: left;
@@ -170,5 +173,64 @@ text-decoration: none;
 margin-top: 2.8rem;
 `
 
-export const ContainerMain = styled.div`
+export const ContainerLocation = styled.div`
+background-image: url(${props => props.backgroundImage});
+background-size: 100%;
+background-repeat: no-repeat;
+width: 100%;
+height: 100vh;
+padding-bottom: 30px;
+`
+
+export const BoxLocation = styled.div`
+display: flex;
+justify-content: center;
+align-items: center;
+flex-wrap: wrap;
+font-size: 40px;
+height: 42%;
+width: 100%;
+`
+
+export const BoxTextColumn = styled.div`
+position: relative;
+width: 100%;
+min-height: 1px;
+padding-right: 15px;
+padding-left: 15px;
+`
+
+export const PhoneColumn = styled.div`
+position: relative;
+width: 100%;
+min-height: 1px;
+padding-left: 15px;
+`
+
+export const TitleColumn = styled.h2`
+width: 100%;
+font-size: 50px;
+color: #24292b;
+padding-top: 7%;
+padding-left: 38%;
+`
+
+export const SubtitleColumn = styled.h2`
+width: 100%;
+font-size: 50px;
+color: #fffcf4;
+padding-left: 38%;
+`
+
+export const BoxImagePhone = styled.div`
+display: flex;
+justify-content: flex-end;
+align-items: center;
+height: 30vh;
+margin-left: 7%;
+width: 90%;
+`
+
+export const ImagePhone = styled.img`
+height: 81vh;
 `
