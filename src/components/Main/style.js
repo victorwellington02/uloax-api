@@ -334,3 +334,12 @@ width: 100%;
 display: flex;
 justify-content: space-evenly;
 `
+
+export const TextRide = styled.span`
+width: 100%;
+margin: 0 auto;
+text-align: center;
+font-size: 50px;
+margin-left: 4px;
+color: #f4db31;
+`

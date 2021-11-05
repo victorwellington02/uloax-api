@@ -7,7 +7,7 @@ import Slider from "react-slick"
 
 export function Header() {
     const settings = {
-      dots: false,
+      dots: true,
       infinite: true,
       speed: 200,
       slidesToShow: 1,
@@ -22,8 +22,13 @@ query {
       btnhome
       btncontact
       btntaxi
-      titleour
       logoheader {
+        url
+      }
+      imgtaxiheader {
+        url
+      }
+      imgamericantaxiheader {
         url
       }
     }
@@ -31,7 +36,8 @@ query {
 }
 `)
 
-  const{logoheader, btnhome, btntaxi, btnbooking, btncontact} = data.alldata.headers[0]
+  const{logoheader, btnhome, btntaxi, btnbooking, btncontact,
+     imgtaxiheader, imgamericantaxiheader} = data.alldata.headers[0]
 
     return (
       <>
@@ -48,20 +54,104 @@ query {
             <S.Buttons>{btncontact}</S.Buttons>
           </S.ContainerButtons>
           </S.ContainerHeader>
-      <S.ContainerSlider>
-        <h2> Single Item </h2>
+
+      <S.ContainerSliderPrimary>
         <Slider {...settings}>
-          <div>
-            <img src={logoheader.url} alt=""/>
-          </div>
-          <div>
-          <img src={logoheader.url} alt=""/>
-          </div>
-          <div>
-          <img src={logoheader.url} alt=""/>
-          </div>
+          <S.DivSlide>
+            <S.DivTest>
+            <S.BoxBook>
+              <S.TextBook>BOOK NOW</S.TextBook>
+              <S.TextBookCall>(+71) 1234567890</S.TextBookCall>
+            </S.BoxBook>
+            <S.BoxImageTaxi>
+              <S.ImageTaxi src={imgtaxiheader.url}/>
+            </S.BoxImageTaxi>
+            </S.DivTest>
+            <S.BoxDestination>
+              <S.TextDestination>Book a City Taxi to your destination in town</S.TextDestination>
+            </S.BoxDestination>
+            
+            <S.BoxInfos>
+              <S.TextInput>Your everyday travel partner</S.TextInput>
+              
+              <S.BoxInput>
+              <S.InputInfos placeholder="PICKUP"></S.InputInfos>
+              </S.BoxInput>
+
+              <S.BoxInput>
+              <S.InputInfos placeholder="DROP"></S.InputInfos>
+              </S.BoxInput>
+
+              <S.BoxInput>
+              <S.InputInfos placeholder="Enter Your Email"></S.InputInfos>
+              </S.BoxInput>
+              <S.ButtonInput>SEARCH</S.ButtonInput>
+            </S.BoxInfos>
+          </S.DivSlide>
+          <S.DivSlide>
+            <S.DivTest>
+            <S.BoxBook>
+              <S.TextBook>BOOK NOW</S.TextBook>
+              <S.TextBookCall>(+71) 1234567890</S.TextBookCall>
+            </S.BoxBook>
+            <S.BoxImageTaxi>
+              <S.ImageTaxi src={imgtaxiheader.url}/>
+            </S.BoxImageTaxi>
+            </S.DivTest>
+            <S.BoxDestination>
+              <S.TextDestination>Book a City Taxi to your destination in town</S.TextDestination>
+            </S.BoxDestination>
+            
+            <S.BoxInfos>
+              <S.TextInput>Your everyday travel partner</S.TextInput>
+              
+              <S.BoxInput>
+              <S.InputInfos placeholder="PICKUP"></S.InputInfos>
+              </S.BoxInput>
+
+              <S.BoxInput>
+              <S.InputInfos placeholder="DROP"></S.InputInfos>
+              </S.BoxInput>
+
+              <S.BoxInput>
+              <S.InputInfos placeholder="Enter Your Email"></S.InputInfos>
+              </S.BoxInput>
+              <S.ButtonInput>SEARCH</S.ButtonInput>
+            </S.BoxInfos>
+          </S.DivSlide>
+          <S.DivSlide>
+            <S.DivTest>
+            <S.BoxBook>
+              <S.TextBook>BOOK NOW</S.TextBook>
+              <S.TextBookCall>(+71) 1234567890</S.TextBookCall>
+            </S.BoxBook>
+            <S.BoxImageTaxi>
+              <S.ImageTaxi src={imgamericantaxiheader.url}/>
+            </S.BoxImageTaxi>
+            </S.DivTest>
+            <S.BoxDestination>
+              <S.TextDestination>Book a City Taxi to your destination in town</S.TextDestination>
+            </S.BoxDestination>
+            
+            <S.BoxInfos>
+              <S.TextInput>Your everyday travel partner</S.TextInput>
+              
+              <S.BoxInput>
+              <S.InputInfos placeholder="PICKUP"></S.InputInfos>
+              </S.BoxInput>
+
+              <S.BoxInput>
+              <S.InputInfos placeholder="DROP"></S.InputInfos>
+              </S.BoxInput>
+
+              <S.BoxInput>
+              <S.InputInfos placeholder="Enter Your Email"></S.InputInfos>
+              </S.BoxInput>
+              <S.ButtonInput>SEARCH</S.ButtonInput>
+            </S.BoxInfos>
+          </S.DivSlide>
         </Slider>
-      </S.ContainerSlider>
+      </S.ContainerSliderPrimary>
       </>
     );
   }

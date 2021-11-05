@@ -98,7 +98,9 @@ btnbooknow, imgsinal, backgroundphone, backgroundplace, titledownload, subtitlet
         <S.ContainerRide>
             <S.BoxRide>
                 <S.BoxTitleRide>
-                    <S.TitleRide>{titlewhyrider}</S.TitleRide>
+                    <S.TitleRide>Why Ride
+                        <S.TextRide>With Uloax</S.TextRide>
+                    </S.TitleRide>
                 </S.BoxTitleRide>
             </S.BoxRide>
         </S.ContainerRide>
