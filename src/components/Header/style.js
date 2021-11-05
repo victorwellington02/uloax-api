@@ -29,3 +29,7 @@ cursor: pointer;
 color: white;
 margin-right: 5.5vw;
 `
+
+export const ContainerSlider = styled.div`
+overflow-x: hidden;
+`

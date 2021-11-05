@@ -43,7 +43,7 @@ export function Footer() {
     const {titleadd, lorem, titlelinks, btnhomefooter, btnabout,  btntaxifooter,
         btnbookingfooter, btncontactfooter, titlefollow, imgfacebook, imgtwitter,
         imglinkendin, imgyoutube, imginstagram, btnsubscribe, imgbolinha } = data.alldata.footers[0]
-      
+
     return(
       <S.ContainerFooterSpace>
         
