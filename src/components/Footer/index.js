@@ -126,7 +126,9 @@ export function Footer() {
         </S.ContainerFooter>
           <S.ContainerCopyright>
               <div>
-                <S.ParagraphCopyright>2019 All Rights Reserved. Free html Templates</S.ParagraphCopyright>
+                <S.ParagraphCopyright>2019 All Rights Reserved.
+                  <S.CopyrightLink href=""> Free html Templates</S.CopyrightLink>
+                </S.ParagraphCopyright>
               </div>
           </S.ContainerCopyright>
         </S.ContainerFooterSpace>

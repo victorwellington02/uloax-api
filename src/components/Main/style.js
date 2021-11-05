@@ -158,6 +158,9 @@ padding: 10px 0px;
 margin-top: 30px;
 text-decoration: none;
 margin-top: 2.8rem;
+&:hover {
+    background-color: black;
+}
 `
 
 export const ButtonCardReverse = styled.a`
@@ -171,6 +174,9 @@ padding: 10px 0px;
 margin-top: 30px;
 text-decoration: none;
 margin-top: 2.8rem;
+&:hover {
+    background-color: black;
+}
 `
 
 export const ContainerLocation = styled.div`

@@ -7,11 +7,14 @@ import Slider from "react-slick"
 
 export function Header() {
     const settings = {
-      dots: true,
+      dots: false,
       infinite: true,
-      speed: 200,
+      speed: 3000,
+      slidesToScroll: 1,
       slidesToShow: 1,
       slidesToScroll: 1,
+      autoplay: true,
+      autoplaySpeed: 5000,
     };
     
 const data = useStaticQuery(graphql`

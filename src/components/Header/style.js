@@ -28,6 +28,9 @@ border: 0;
 cursor: pointer;
 color: white;
 margin-right: 5.5vw;
+&:hover {
+    color: #fecf3d;
+}
 `
 
 export const ContainerSliderPrimary = styled.div`
@@ -154,69 +157,8 @@ font-size: 18px;
 border-radius: 10px;
 margin-right: 30px;
 cursor: pointer;
+&:hover {
+    color: black;
+    background-color: #fecf3d;
+}
 `
-
-// export const ContainerSlider = styled.div`
-// width: 100%;
-// padding-right: 15px;
-// padding-left: 15px;
-// margin-right: auto;
-// margin-left: auto;
-// background-color: #1a1a1a;
-// `
-
-// export const BoxSlide = styled.div`
-// position: relative;
-// display: none;
-// align-items: center;
-// width: 100%;
-// transition: -webkit-transform .6s ease;
-// transition: transform .6s ease;
-// transition: transform .6s ease,-webkit-transform .6s ease;
-// backface-visibility: hidden;
-// perspective: 1000px;
-// `
-
-// export const BoxRow = styled.div`
-// display: flex;
-// flex-wrap: wrap;
-// margin-right: -15px;
-// margin-left: -15px;
-// `
-
-// export const BoxCol = styled.div`
-// position: relative;
-// width: 100%;
-// min-height: 1px;
-// padding-right: 15px;
-// padding-left: 15px;
-// `
-
-// export const BoxBook = styled.div`
-// width: 70%;
-// float: right;
-// background-color: #f8ca11;
-// height: auto;
-// padding: 10px;
-// `
-
-// // export const BoxYellow = styled.div`
-// // `
-
-// export const BookText = styled.h1`
-// font-size: 40px;
-// color: #fbfaf6;
-// text-align: center;
-// `
-
-// export const CallText = styled.h1`
-
-// `
-
-// export const BoxImage = styled.div`
-
-// `
-
-// export const ImageSlide = styled.img`
-
-// `

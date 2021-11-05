@@ -150,6 +150,9 @@ border-style: none;
 export const ParagraphFollow = styled.p`
 color: #fffcf4;
 margin-left: 17px;
+&:hover {
+    color: #fecf3d;
+}
 `
 
 export const ContainerCopyright = styled.div`
@@ -174,4 +177,11 @@ export const ImageLinks = styled.img`
 margin-top: 5px;
 width: 10px;
 height: 10px;
+`
+
+export const CopyrightLink = styled.a`
+text-decoration: none;
+&:hover {
+    color: #fecf3d;
+}
 `
